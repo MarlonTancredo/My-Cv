@@ -14,7 +14,9 @@ export const Paragraph = styled.p`
   margin-bottom: 0px;
 `;
 
-export const Section = styled.h3``;
+export const Section = styled.h3`
+  color: ${grey.color};
+`;
 
 //Aside Component styles
 export const AsideContainer = styled.div`
