@@ -87,9 +87,9 @@ export const ItemList = styled.li``;
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${black.color};
+  color: ${grey.color};
   &:hover {
-    color: ${grey.color};
+    color: ${black.color};
   }
 `;
 
