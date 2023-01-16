@@ -59,41 +59,51 @@ const Content = () => {
       <S.Section>LANGUAGE SKILLS</S.Section>
       <p>MOTHER TONGUE(S): Portuguese </p>
       <h4>Other language(s): English</h4>
-      <S.Laguages>
-        <div>
-          <strong>Listening -</strong> B1
-        </div>
-        <div>
-          <strong>Reading</strong> - B1
-        </div>
-        <div>
-          <strong>Spoken production</strong> - B1
-        </div>
-        <div>
-          <strong>Spoken interaction</strong> - B1
-        </div>
-        <div>
-          <strong>Writing</strong> - B1
-        </div>
-      </S.Laguages>
+      <S.LanguagesSection>
+        <S.Language>
+          Listening
+          <S.Skill>B1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Reading
+          <S.Skill>B1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Spoken production
+          <S.Skill>B1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Spoken interaction
+          <S.Skill>B1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Writing
+          <S.Skill>B1</S.Skill>
+        </S.Language>
+      </S.LanguagesSection>
       <h4>Other language(s): Italian</h4>
-      <S.Laguages>
-        <div>
-          <strong>Listening -</strong> C1
-        </div>
-        <div>
-          <strong>Reading</strong> - C1
-        </div>
-        <div>
-          <strong>Spoken production</strong> - C1
-        </div>
-        <div>
-          <strong>Spoken interaction</strong> - C1
-        </div>
-        <div>
-          <strong>Writing</strong> - C1
-        </div>
-      </S.Laguages>
+      <S.LanguagesSection>
+        <S.Language>
+          Listening
+          <S.Skill>C1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Reading
+          <S.Skill>C1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Spoken production
+          <S.Skill>C1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Spoken interaction
+          <S.Skill>C1</S.Skill>
+        </S.Language>
+        <S.Language>
+          Writing
+          <S.Skill>C1</S.Skill>
+        </S.Language>
+      </S.LanguagesSection>
     </S.ContentContainer>
   );
 };

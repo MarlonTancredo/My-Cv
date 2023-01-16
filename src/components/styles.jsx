@@ -95,9 +95,19 @@ export const Link = styled.a`
   }
 `;
 
-export const Laguages = styled.div`
+export const LanguagesSection = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
   text-align: center;
+`;
+
+export const Language = styled.div`
+  font-weight: bold;
+  color: ${grey.color};
+`;
+
+export const Skill = styled.div`
+  font-weight: bold;
+  color: ${black.color};
 `;
