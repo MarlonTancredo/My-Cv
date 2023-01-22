@@ -1,3 +1,7 @@
+# Image project
+
+![Alt text](./public/img/portfolio-img.png "Optional title")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
