@@ -17,7 +17,7 @@ const Aside = () => {
       </div>
       <div>
         <S.Name>Daks Marlon Tancredo</S.Name>
-        <S.Role>Junior Front-End Developer</S.Role>
+        <S.Role>Junior Front-End Web Developer</S.Role>
       </div>
       <S.Information>
         <S.Paragraph>

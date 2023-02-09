@@ -34,9 +34,12 @@ const Content = () => {
         <S.ItemList>
           Algorithms and programming logic with JAVASCRIPT
         </S.ItemList>
-        <S.ItemList>Oriented objects programming with JAVASCRIPT.</S.ItemList>
+        <S.ItemList>Oriented objects programming with Java Script.</S.ItemList>
         <S.ItemList>HTML and CSS</S.ItemList>
         <S.ItemList>Version control with GIT Basics.</S.ItemList>
+        <S.ItemList>Node JS.</S.ItemList>
+        <S.ItemList>Bootstrap.</S.ItemList>
+        <S.ItemList>Redux.</S.ItemList>
         <S.ItemList>React JS.</S.ItemList>
       </S.List>
       <S.Paragraph>
