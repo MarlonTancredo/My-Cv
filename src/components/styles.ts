@@ -112,10 +112,10 @@ export const List = styled.ul``;
 export const ItemList = styled.li``;
 
 export const Link = styled.a`
-  text-decoration: none;
+  text-decoration: transparent;
   color: ${grey};
   &:hover {
-    color: ${black};
+    text-decoration: underline;
   }
 `;
 
