@@ -8,7 +8,7 @@ const colors = {
 const { black, grey } = colors;
 
 //Any Component
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
   margin-bottom: 0px;
 `;
 
@@ -46,14 +46,14 @@ export const imgCV = styled.img`
   margin-bottom: 20px;
 `;
 
-export const Name = styled.p`
+export const Name = styled.div`
   margin: 0;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
 `;
 
-export const Role = styled.p`
+export const Role = styled.div`
   margin: 0;
   color: ${grey};
 `;

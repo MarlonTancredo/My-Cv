@@ -1,11 +1,45 @@
 import * as S from "./styles";
 
+const mySkills = {
+  useall: {
+    useallStartDate: "11/2018",
+    useallEndDate: "10/2019",
+    technologies: [
+      { skill: "HTML" },
+      { skill: "CSS" },
+      { skill: "SASS" },
+      { skill: "Javascript" },
+    ],
+  },
+  hyperionDev: {
+    hyperionStartDate: "11/2022",
+    hyperionEndDate: "04/2023",
+    hyperionSkills: [
+      { skill: "Algorithms and programming logic with JAVASCRIPT" },
+      { skill: "Oriented objects programming with Java Script." },
+      { skill: "HTML and CSS" },
+      { skill: "Version control with GIT Basics." },
+      { skill: "Node JS." },
+      { skill: "Bootstrap." },
+      { skill: "Redux." },
+      { skill: "React JS." },
+    ],
+  },
+};
+const { useall } = mySkills;
+const { useallStartDate, useallEndDate, technologies } = useall;
+
+const { hyperionDev } = mySkills;
+const { hyperionStartDate, hyperionEndDate, hyperionSkills } = hyperionDev;
+
 //Content component.
 const Content = () => {
   return (
     <S.ContentContainer>
       <S.Section>WORK EXPERIENCE</S.Section>
-      <strong>11/2018 – 10/2019</strong> Criciuma, Brazil
+      {/* Useall section */}
+      <strong>{`${useallStartDate} – ${useallEndDate}`}</strong> Criciuma,
+      Brazil
       <h4>Front-end developer - Useall</h4>
       <S.Paragraph>
         At Useall i had my first job as Front-end developer my main goals were:
@@ -23,24 +57,18 @@ const Content = () => {
         </S.ItemList>
       </S.List>
       <S.Paragraph>Main technologies used:</S.Paragraph>
-      <S.List>
-        <S.ItemList>HTML and CSS (SASS)</S.ItemList>
-        <S.ItemList> ES6 / ES7</S.ItemList>
-      </S.List>
+      {technologies.map((skills: any, index: number) => {
+        return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+      })}
       <S.Section>EDUCATION AND TRAINING</S.Section>
-      <strong>11/2022 – 04/2023</strong>London, UK
-      <h4>Web Developer - HyperionDev</h4>
+      {/* HyperionDev section */}
+      <strong>{`${hyperionStartDate} – ${hyperionEndDate}`}</strong>
+      London, UK
+      <p>Web Developer - HyperionDev</p>
       <S.List>
-        <S.ItemList>
-          Algorithms and programming logic with JAVASCRIPT
-        </S.ItemList>
-        <S.ItemList>Oriented objects programming with Java Script.</S.ItemList>
-        <S.ItemList>HTML and CSS</S.ItemList>
-        <S.ItemList>Version control with GIT Basics.</S.ItemList>
-        <S.ItemList>Node JS.</S.ItemList>
-        <S.ItemList>Bootstrap.</S.ItemList>
-        <S.ItemList>Redux.</S.ItemList>
-        <S.ItemList>React JS.</S.ItemList>
+        {hyperionSkills.map((skills: { skill: string }, index: number) => {
+          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+        })}
       </S.List>
       <S.Paragraph>
         <strong>Website: </strong>
@@ -52,7 +80,7 @@ const Content = () => {
         </S.Link>
       </S.Paragraph>
       <S.Paragraph>
-        <strong>01/02/2014 – 15/12/2015 Criciúma, Brazil </strong>
+        <strong>02/2014 – 12/2015 Criciúma, Brazil </strong>
         <h4>Technical course - SENAI </h4>
       </S.Paragraph>
       <S.List>
