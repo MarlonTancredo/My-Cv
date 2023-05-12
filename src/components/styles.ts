@@ -23,7 +23,7 @@ export const Section = styled.h3`
 
 const rightSlide = keyframes`
  from { 
-  transform: translateX(400px);
+  transform: translateY(-400px);
  }
  to { 
   transform: translateX(0px);
