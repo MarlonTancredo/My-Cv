@@ -5,7 +5,7 @@ const Content = () => {
   return (
     <S.ContentContainer>
       <S.Section>WORK EXPERIENCE</S.Section>
-      <strong>11/2018 – 04/2019</strong> Criciuma, Brazil
+      <strong>11/2018 – 10/2019</strong> Criciuma, Brazil
       <h4>Front-end developer - Useall</h4>
       <S.Paragraph>
         At Useall i had my first job as Front-end developer my main goals were:

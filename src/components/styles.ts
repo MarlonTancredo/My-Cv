@@ -49,13 +49,12 @@ export const Role = styled.p`
 export const Information = styled.div`
   margin-top: 30px;
   text-align: center;
-   {
-    svg {
-      position: relative;
-      top: 3.5px;
-      margin-right: 8px;
-      color: ${grey.color};
-    }
+
+  svg {
+    position: relative;
+    top: 3.5px;
+    margin-right: 8px;
+    color: ${grey.color};
   }
 `;
 
@@ -63,13 +62,12 @@ export const SocialMidea = styled.div`
   margin-top: 30px;
   display: flex;
   flex-direction: row;
-   {
-    svg {
-      width: 40px;
-      height: 40px;
-      margin-right: 20px;
-      color: ${grey.color};
-    }
+
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    color: ${grey.color};
   }
   & :hover {
     color: ${black.color};

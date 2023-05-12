@@ -9,7 +9,7 @@ export const AppContainer = styled.div`
   flex-direction: row;
   @media (max-width: 1150px) {
     flex-direction: column;
-  } ;
+  }
 `;
 
 export const AsideDiv = styled.div`
@@ -18,6 +18,5 @@ export const AsideDiv = styled.div`
 `;
 
 export const CotentDiv = styled.div`
-  margin 10px;
-
+  margin: 10px;
 `;
