@@ -93,7 +93,7 @@ export const SocialMidea = styled.div`
 //Content Component styles.
 const leftSlide = keyframes`
  from { 
-  transform: translateX(-400px);
+  transform: translateX(400px);
  }
  to { 
   transform: translateX(0px);
