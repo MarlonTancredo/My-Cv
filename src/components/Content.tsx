@@ -38,8 +38,8 @@ const Content = () => {
     <S.ContentContainer>
       <S.Section>WORK EXPERIENCE</S.Section>
       {/* Useall section */}
-      <strong>{`${useallStartDate} – ${useallEndDate}`}</strong> Criciuma,
-      Brazil
+      <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
+      Criciuma, Brazil
       <h4>Front-end developer - Useall</h4>
       <S.Paragraph>
         At Useall i had my first job as Front-end developer my main goals were:
@@ -62,16 +62,11 @@ const Content = () => {
       })}
       <S.Section>EDUCATION AND TRAINING</S.Section>
       {/* HyperionDev section */}
-      <strong>{`${hyperionStartDate} – ${hyperionEndDate}`}</strong>
+      <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
       London, UK
-      <p>Web Developer - HyperionDev</p>
-      <S.List>
-        {hyperionSkills.map((skills: { skill: string }, index: number) => {
-          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-        })}
-      </S.List>
+      <strong>Web Developer - HyperionDev</strong>
       <S.Paragraph>
-        <strong>Website: </strong>
+        <strong>Portfolio: </strong>
         <S.Link
           href="https://www.hyperiondev.com/portfolio/103916/"
           target="_blank"
@@ -79,10 +74,14 @@ const Content = () => {
           www.hyperiondev.com
         </S.Link>
       </S.Paragraph>
-      <S.Paragraph>
-        <strong>02/2014 – 12/2015 Criciúma, Brazil </strong>
-        <h4>Technical course - SENAI </h4>
-      </S.Paragraph>
+      <S.List>
+        {hyperionSkills.map((skills: { skill: string }, index: number) => {
+          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+        })}
+      </S.List>
+      <strong>02/2014 - 12/2015 </strong>
+      Criciúma, Brazil
+      <strong>Technical course - SENAI</strong>
       <S.List>
         <S.ItemList>Algorithms </S.ItemList>
         <S.ItemList>SQL database</S.ItemList>

@@ -9,7 +9,10 @@ const { black, grey } = colors;
 
 //Any Component
 export const Paragraph = styled.div`
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 export const Section = styled.h3`
