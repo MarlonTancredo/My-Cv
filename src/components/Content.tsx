@@ -57,9 +57,11 @@ const Content = () => {
         </S.ItemList>
       </S.List>
       <S.Paragraph>Main technologies used:</S.Paragraph>
-      {technologies.map((skills: any, index: number) => {
-        return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-      })}
+      <S.List>
+        {technologies.map((skills: any, index: number) => {
+          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+        })}
+      </S.List>
       <S.Section>EDUCATION AND TRAINING</S.Section>
       {/* HyperionDev section */}
       <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
