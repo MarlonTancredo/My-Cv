@@ -28,7 +28,7 @@ const Content = () => {
         <S.ItemList> ES6 / ES7</S.ItemList>
       </S.List>
       <S.Section>EDUCATION AND TRAINING</S.Section>
-      <strong>01/11/2022 – CURRENT</strong>London, UK
+      <strong>11/2022 – 04/2023</strong>London, UK
       <h4>Web Developer - HyperionDev</h4>
       <S.List>
         <S.ItemList>
@@ -44,7 +44,10 @@ const Content = () => {
       </S.List>
       <S.Paragraph>
         <strong>Website: </strong>
-        <S.Link href="https://www.hyperiondev.com/" target="_blank">
+        <S.Link
+          href="https://www.hyperiondev.com/portfolio/103916/"
+          target="_blank"
+        >
           www.hyperiondev.com
         </S.Link>
       </S.Paragraph>
