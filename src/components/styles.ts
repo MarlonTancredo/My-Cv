@@ -1,13 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 //Colors
-const black = {
-  color: "#000000",
+const colors = {
+  black: "#000000",
+  grey: "#808080",
 };
-
-const grey = {
-  color: "#808080",
-};
+const { black, grey } = colors;
 
 //Any Component
 export const Paragraph = styled.p`
@@ -15,11 +13,25 @@ export const Paragraph = styled.p`
 `;
 
 export const Section = styled.h3`
-  color: ${grey.color};
+  color: ${grey};
 `;
 
 //Aside Component styles
+
+const rightSlide = keyframes`
+ from { 
+  transform: translateX(400px);
+ }
+ to { 
+  transform: translateX(0px);
+ }
+ `;
+
 export const AsideContainer = styled.div`
+  animation-name: ${rightSlide};
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   margin-right: 20px;
   margin-left: 20px;
   display: flex;
@@ -43,7 +55,7 @@ export const Name = styled.p`
 
 export const Role = styled.p`
   margin: 0;
-  color: ${grey.color};
+  color: ${grey};
 `;
 
 export const Information = styled.div`
@@ -54,7 +66,7 @@ export const Information = styled.div`
     position: relative;
     top: 3.5px;
     margin-right: 8px;
-    color: ${grey.color};
+    color: ${grey};
   }
 `;
 
@@ -67,18 +79,32 @@ export const SocialMidea = styled.div`
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    color: ${grey.color};
+    color: ${grey};
   }
   & :hover {
-    color: ${black.color};
+    color: ${black};
     cursor: pointer;
   }
 `;
 
 //Content Component styles.
+const leftSlide = keyframes`
+ from { 
+  transform: translateX(-400px);
+ }
+ to { 
+  transform: translateX(0px);
+ }
+ `;
+
 export const ContentContainer = styled.div`
+  animation-name: ${leftSlide};
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const List = styled.ul``;
@@ -87,9 +113,9 @@ export const ItemList = styled.li``;
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${grey.color};
+  color: ${grey};
   &:hover {
-    color: ${black.color};
+    color: ${black};
   }
 `;
 
@@ -102,10 +128,10 @@ export const LanguagesSection = styled.div`
 
 export const Language = styled.div`
   font-weight: bold;
-  color: ${grey.color};
+  color: ${grey};
 `;
 
 export const Skill = styled.div`
   font-weight: bold;
-  color: ${black.color};
+  color: ${black};
 `;

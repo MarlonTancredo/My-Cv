@@ -5,7 +5,6 @@ import * as Fa from "react-icons/fa";
 import * as Fi from "react-icons/fi";
 import * as Bs from "react-icons/bs";
 
-//Importing profile image.
 import profile from "../img/profile.png";
 
 //Aside Component.
