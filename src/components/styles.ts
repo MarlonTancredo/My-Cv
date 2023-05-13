@@ -18,10 +18,7 @@ export const Section = styled.div`
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media (max-width: 600px) {
-    min-width: 28rem;
-  }
-  @media (max-width: 450px) {
-    min-width: 12rem;
+    min-width: 100%;
   }
 `;
 
