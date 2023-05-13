@@ -17,6 +17,9 @@ export const Section = styled.div`
   margin-bottom: 0.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
+  @media (max-width: 600px) {
+    min-width: 28rem;
+  }
 `;
 
 export const SectionTitle = styled.h3`
