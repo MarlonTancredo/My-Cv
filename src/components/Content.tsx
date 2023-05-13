@@ -125,51 +125,55 @@ const Content = () => {
       </S.Section>
       <S.Section>
         <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
-        <p>MOTHER TONGUE(S): Portuguese </p>
-        <h4>Other language(s): English</h4>
+        <S.Paragraph>
+          <strong> MOTHER TONGUE(S):</strong> Portuguese
+        </S.Paragraph>
+        <S.Paragraph>
+          <strong> Other language(s):</strong> English
+        </S.Paragraph>
         <S.LanguagesSection>
           <S.Language>
             Listening
-            <S.Skill>B1</S.Skill>
+            <S.Skill>C1</S.Skill>
           </S.Language>
           <S.Language>
             Reading
-            <S.Skill>B1</S.Skill>
+            <S.Skill>C1</S.Skill>
           </S.Language>
           <S.Language>
             Spoken production
-            <S.Skill>B1</S.Skill>
+            <S.Skill>C1</S.Skill>
           </S.Language>
           <S.Language>
             Spoken interaction
-            <S.Skill>B1</S.Skill>
+            <S.Skill>C1</S.Skill>
           </S.Language>
           <S.Language>
             Writing
-            <S.Skill>B1</S.Skill>
+            <S.Skill>C1</S.Skill>
           </S.Language>
         </S.LanguagesSection>
         <h4>Other language(s): Italian</h4>
         <S.LanguagesSection>
           <S.Language>
             Listening
-            <S.Skill>C1</S.Skill>
+            <S.Skill>C2</S.Skill>
           </S.Language>
           <S.Language>
             Reading
-            <S.Skill>C1</S.Skill>
+            <S.Skill>C2</S.Skill>
           </S.Language>
           <S.Language>
             Spoken production
-            <S.Skill>C1</S.Skill>
+            <S.Skill>C2</S.Skill>
           </S.Language>
           <S.Language>
             Spoken interaction
-            <S.Skill>C1</S.Skill>
+            <S.Skill>C2</S.Skill>
           </S.Language>
           <S.Language>
             Writing
-            <S.Skill>C1</S.Skill>
+            <S.Skill>C2</S.Skill>
           </S.Language>
         </S.LanguagesSection>
       </S.Section>
