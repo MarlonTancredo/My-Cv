@@ -20,6 +20,9 @@ export const Section = styled.div`
   @media (max-width: 600px) {
     min-width: 28rem;
   }
+  @media (max-width: 450px) {
+    min-width: 12rem;
+  }
 `;
 
 export const SectionTitle = styled.h3`
@@ -138,6 +141,9 @@ export const LanguagesSection = styled.div`
   flex-direction: row;
   gap: 10px;
   text-align: center;
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export const Language = styled.div`
