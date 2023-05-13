@@ -8,17 +8,27 @@ const colors = {
 const { black, grey } = colors;
 
 //Any Component
+
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  min-width: 35rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 6px 20px 0 ${colors.grey};
+`;
+
+export const SectionTitle = styled.h3`
+  color: ${grey};
+`;
+
 export const Paragraph = styled.div`
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
 `;
-
-export const Section = styled.h3`
-  color: ${grey};
-`;
-
 //Aside Component styles
 
 const rightSlide = keyframes`

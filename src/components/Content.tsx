@@ -5,6 +5,8 @@ const useall = {
   useallEndDate: "10/2019",
   useallCity: "Criciúma",
   useallCountry: "Brazil",
+  useallJobDescription:
+    " At Useall i had my first job as Front-end developer my main goals were:",
   myGoals: [
     { goal: "Develop user-friendly interfaces." },
     {
@@ -27,6 +29,7 @@ const {
   useallEndDate,
   useallCity,
   useallCountry,
+  useallJobDescription,
   technologies,
   myGoals,
 } = useall;
@@ -59,105 +62,117 @@ const {
 const Content = () => {
   return (
     <S.ContentContainer>
-      <S.Section>WORK EXPERIENCE</S.Section>
-      {/* Useall section */}
-      <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
-      {useallCity}, {useallCountry}
-      <h4>Front-end developer - Useall</h4>
-      <S.Paragraph>
-        At Useall i had my first job as Front-end developer my main goals were:
-      </S.Paragraph>
-      {/* Goals */}
-      <S.List>
-        {myGoals.map((goals: { goal: string }, index: number) => {
-          return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
-        })}
-      </S.List>
-      <S.Paragraph>Main technologies used:</S.Paragraph>
-      {/* Technologies */}
-      <S.List>
-        {technologies.map((skills: { skill: string }, index: number) => {
-          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-        })}
-      </S.List>
-      <S.Section>EDUCATION AND TRAINING</S.Section>
-      {/* HyperionDev section */}
-      <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
-      {hyperionCity}, {hyperionCountry}
-      <strong>Web Developer - HyperionDev</strong>
-      <S.Paragraph>
-        <strong>Portfolio: </strong>
-        <S.Link
-          href="https://www.hyperiondev.com/portfolio/103916/"
-          target="_blank"
-        >
-          www.hyperiondev.com
-        </S.Link>
-      </S.Paragraph>
-      {/* Skills */}
-      <S.List>
-        {hyperionSkills.map((skills: { skill: string }, index: number) => {
-          return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-        })}
-      </S.List>
-      <strong>02/2014 - 12/2015 </strong>
-      Criciúma, Brazil
-      <strong>Technical course - SENAI</strong>
-      <S.List>
-        <S.ItemList>Algorithms </S.ItemList>
-        <S.ItemList>SQL database</S.ItemList>
-        <S.ItemList>
-          Website development with HTML, CSS and JavaScript
-        </S.ItemList>
-      </S.List>
-      <S.Section>LANGUAGE SKILLS</S.Section>
-      <p>MOTHER TONGUE(S): Portuguese </p>
-      <h4>Other language(s): English</h4>
-      <S.LanguagesSection>
-        <S.Language>
-          Listening
-          <S.Skill>B1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Reading
-          <S.Skill>B1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Spoken production
-          <S.Skill>B1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Spoken interaction
-          <S.Skill>B1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Writing
-          <S.Skill>B1</S.Skill>
-        </S.Language>
-      </S.LanguagesSection>
-      <h4>Other language(s): Italian</h4>
-      <S.LanguagesSection>
-        <S.Language>
-          Listening
-          <S.Skill>C1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Reading
-          <S.Skill>C1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Spoken production
-          <S.Skill>C1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Spoken interaction
-          <S.Skill>C1</S.Skill>
-        </S.Language>
-        <S.Language>
-          Writing
-          <S.Skill>C1</S.Skill>
-        </S.Language>
-      </S.LanguagesSection>
+      <S.Section>
+        <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
+        {/* Useall section */}
+        <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
+        {useallCity}, {useallCountry}
+        <S.Paragraph>
+          <strong>Front-end developer - Useall</strong>
+        </S.Paragraph>
+        <S.Paragraph>{useallJobDescription}</S.Paragraph>
+        {/* Goals */}
+        <S.List>
+          {myGoals.map((goals: { goal: string }, index: number) => {
+            return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
+          })}
+        </S.List>
+        <S.Paragraph>Main technologies used:</S.Paragraph>
+        {/* Technologies */}
+        <S.List>
+          {technologies.map((skills: { skill: string }, index: number) => {
+            return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+          })}
+        </S.List>
+      </S.Section>
+      <S.Section>
+        <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
+        {/* HyperionDev section */}
+        <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
+        {hyperionCity}, {hyperionCountry}
+        <S.Paragraph>
+          <strong>Web Developer - HyperionDev</strong>
+        </S.Paragraph>
+        {/* Skills */}
+        <S.List>
+          {hyperionSkills.map((skills: { skill: string }, index: number) => {
+            return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+          })}
+        </S.List>
+        <S.Paragraph>
+          <strong>Portfolio: </strong>
+          <S.Link
+            href="https://www.hyperiondev.com/portfolio/103916/"
+            target="_blank"
+          >
+            www.hyperiondev.com
+          </S.Link>
+        </S.Paragraph>
+      </S.Section>
+      <S.Section>
+        <strong>02/2014 - 12/2015 </strong>
+        Criciúma, Brazil
+        <S.Paragraph>
+          <strong>Technical course - SENAI</strong>
+        </S.Paragraph>
+        <S.List>
+          <S.ItemList>Algorithms </S.ItemList>
+          <S.ItemList>SQL database</S.ItemList>
+          <S.ItemList>
+            Website development with HTML, CSS and JavaScript
+          </S.ItemList>
+        </S.List>
+      </S.Section>
+      <S.Section>
+        <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
+        <p>MOTHER TONGUE(S): Portuguese </p>
+        <h4>Other language(s): English</h4>
+        <S.LanguagesSection>
+          <S.Language>
+            Listening
+            <S.Skill>B1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Reading
+            <S.Skill>B1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Spoken production
+            <S.Skill>B1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Spoken interaction
+            <S.Skill>B1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Writing
+            <S.Skill>B1</S.Skill>
+          </S.Language>
+        </S.LanguagesSection>
+        <h4>Other language(s): Italian</h4>
+        <S.LanguagesSection>
+          <S.Language>
+            Listening
+            <S.Skill>C1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Reading
+            <S.Skill>C1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Spoken production
+            <S.Skill>C1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Spoken interaction
+            <S.Skill>C1</S.Skill>
+          </S.Language>
+          <S.Language>
+            Writing
+            <S.Skill>C1</S.Skill>
+          </S.Language>
+        </S.LanguagesSection>
+      </S.Section>
     </S.ContentContainer>
   );
 };
