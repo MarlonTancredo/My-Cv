@@ -77,7 +77,9 @@ const Content = () => {
             return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
           })}
         </S.List>
-        <S.Paragraph>Main technologies used:</S.Paragraph>
+        <S.Paragraph>
+          <strong>Main technologies used:</strong>
+        </S.Paragraph>
         {/* Technologies */}
         <S.List>
           {technologies.map((skills: { skill: string }, index: number) => {
@@ -108,8 +110,6 @@ const Content = () => {
             www.hyperiondev.com
           </S.Link>
         </S.Paragraph>
-      </S.Section>
-      <S.Section>
         <strong>02/2014 - 12/2015 </strong>
         Criciúma, Brazil
         <S.Paragraph>

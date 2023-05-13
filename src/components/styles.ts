@@ -26,8 +26,6 @@ export const SectionTitle = styled.h3`
 export const Paragraph = styled.div`
   margin-bottom: 20px;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 `;
 //Aside Component styles
 
