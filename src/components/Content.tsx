@@ -153,7 +153,9 @@ const Content = () => {
             <S.Skill>C1</S.Skill>
           </S.Language>
         </S.LanguagesSection>
-        <h4>Other language(s): Italian</h4>
+        <S.Paragraph>
+          <strong>Other language(s):</strong> Italian
+        </S.Paragraph>
         <S.LanguagesSection>
           <S.Language>
             Listening
