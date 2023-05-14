@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
-  justify-content: center;
-  max-width: 1200px;
   display: flex;
   flex-direction: row;
+  max-width: 1200px;
+  justify-content: center;
+  justify-self: center;
   @media only screen and (max-width: 1150px) {
     flex-direction: column;
   }
