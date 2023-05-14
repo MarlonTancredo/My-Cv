@@ -83,6 +83,7 @@ const Content = () => {
         </S.List>
         <S.Paragraph>
           <strong>Main technologies used:</strong>
+          <hr />
         </S.Paragraph>
         {/* Technologies */}
         <S.List>

@@ -90,7 +90,6 @@ export const SectionTitle = styled.h3`
 `;
 
 export const Paragraph = styled.div`
-  margin-bottom: 20px;
   justify-content: center;
 `;
 
@@ -98,7 +97,9 @@ export const List = styled.ul`
   margin-top: 0;
 `;
 
-export const ItemList = styled.li``;
+export const ItemList = styled.li`
+  margin-top: 0;
+`;
 
 export const Link = styled.a`
   text-decoration: transparent;
