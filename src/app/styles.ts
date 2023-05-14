@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
