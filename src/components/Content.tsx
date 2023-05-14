@@ -134,6 +134,7 @@ const Content = () => {
             <strong> Technical course - SENAI</strong>
             <hr />
           </S.Paragraph>
+
           <S.List>
             <S.ItemList>Algorithms </S.ItemList>
             <S.ItemList>SQL database</S.ItemList>
@@ -145,8 +146,8 @@ const Content = () => {
       </Fade>
       <Fade direction="left">
         <S.Section>
-          <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
           <S.Paragraph>
+            <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
             <strong> Mother tongue:</strong> Portuguese
             <hr />
           </S.Paragraph>

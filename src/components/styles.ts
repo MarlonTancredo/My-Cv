@@ -11,6 +11,8 @@ export const AsideContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 6rem;
 `;
 
@@ -72,13 +74,12 @@ export const ContentContainer = styled.div`
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
   min-width: 35rem;
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media only screen and (max-width: 600px) {
-    min-width: 90%;
+    min-width: 100%;
   }
   @media only screen and (max-width: 400px) {
     min-width: 90%;
@@ -91,6 +92,8 @@ export const SectionTitle = styled.h3`
 
 export const Paragraph = styled.div`
   justify-content: center;
+  text-align: center;
+  padding: 1rem;
 `;
 
 export const List = styled.ul`
@@ -112,6 +115,7 @@ export const Link = styled.a`
 export const SkillLanguages = styled.div`
   display: flex;
   flex-direction: row;
+  padding: 1rem;
   gap: 10px;
   text-align: center;
   @media only screen and (max-width: 450px) {
