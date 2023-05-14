@@ -8,7 +8,6 @@ const colors = {
 const { black, grey } = colors;
 
 //Any Component
-
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,9 +29,9 @@ export const Paragraph = styled.div`
   margin-bottom: 20px;
   justify-content: center;
 `;
-//Aside Component styles
 
-const rightSlide = keyframes`
+//Aside styles
+const topSlide = keyframes`
  from { 
   transform: translateY(-400px);
  }
@@ -42,7 +41,7 @@ const rightSlide = keyframes`
  `;
 
 export const AsideContainer = styled.div`
-  animation-name: ${rightSlide};
+  animation-name: ${topSlide};
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -101,7 +100,7 @@ export const SocialMidea = styled.div`
   }
 `;
 
-//Content Component styles.
+//Content styles.
 const leftSlide = keyframes`
  from { 
   transform: translateX(400px);

@@ -62,13 +62,16 @@ const {
 const Content = () => {
   return (
     <S.ContentContainer>
+      {/* Useall section */}
       <S.Section>
-        <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
-        {/* Useall section */}
-        <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
-        {useallCity}, {useallCountry}
+        <S.Paragraph>
+          <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
+          <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
+          {` - ${useallCity} ${useallCountry}`}
+        </S.Paragraph>
         <S.Paragraph>
           <strong>Front-end developer - Useall</strong>
+          <hr />
         </S.Paragraph>
         <S.Paragraph>{useallJobDescription}</S.Paragraph>
         {/* Goals */}
@@ -87,18 +90,23 @@ const Content = () => {
           })}
         </S.List>
       </S.Section>
+      {/* Education and training */}
       <S.Section>
-        <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
         {/* HyperionDev section */}
-        <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
-        {hyperionCity}, {hyperionCountry}
+        <S.Paragraph>
+          <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
+          <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
+          {` - ${hyperionCity} ${hyperionCountry}`}
+        </S.Paragraph>
         <S.Paragraph>
           <strong>Web Developer - HyperionDev</strong>
+          <hr />
         </S.Paragraph>
         {/* Skills */}
         <S.List>
           {hyperionSkills.map((skills: { skill: string }, index: number) => {
-            return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+            const { skill } = skills;
+            return <S.ItemList key={index}>{skill}</S.ItemList>;
           })}
         </S.List>
         <S.Paragraph>
@@ -110,10 +118,14 @@ const Content = () => {
             www.hyperiondev.com
           </S.Link>
         </S.Paragraph>
-        <strong>02/2014 - 12/2015 </strong>
-        Criciúma, Brazil
+        {/* Senai section */}
         <S.Paragraph>
-          <strong>Technical course - SENAI</strong>
+          <hr />
+          <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
+        </S.Paragraph>
+        <S.Paragraph>
+          <strong> Technical course - SENAI</strong>
+          <hr />
         </S.Paragraph>
         <S.List>
           <S.ItemList>Algorithms </S.ItemList>
@@ -126,10 +138,11 @@ const Content = () => {
       <S.Section>
         <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
         <S.Paragraph>
-          <strong> MOTHER TONGUE(S):</strong> Portuguese
+          <strong> Mother tongue:</strong> Portuguese
+          <hr />
         </S.Paragraph>
         <S.Paragraph>
-          <strong> Other language(s):</strong> English
+          <strong> Other language:</strong> English
         </S.Paragraph>
         <S.LanguagesSection>
           <S.Language>
@@ -154,7 +167,8 @@ const Content = () => {
           </S.Language>
         </S.LanguagesSection>
         <S.Paragraph>
-          <strong>Other language(s):</strong> Italian
+          <hr />
+          <strong>Other language:</strong> Italian
         </S.Paragraph>
         <S.LanguagesSection>
           <S.Language>
