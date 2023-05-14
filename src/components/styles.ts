@@ -80,11 +80,20 @@ export const Section = styled.div`
   @media only screen and (max-width: 550px) {
     min-width: 30rem;
   }
+  @media only screen and (max-width: 500px) {
+    min-width: 28rem;
+  }
   @media only screen and (max-width: 450px) {
     min-width: 25rem;
   }
   @media only screen and (max-width: 400px) {
-    min-width: 20rem;
+    min-width: 23rem;
+  }
+  @media only screen and (max-width: 350px) {
+    min-width: 19rem;
+  }
+  @media only screen and (max-width: 300px) {
+    min-width: 15rem;
   }
 `;
 
