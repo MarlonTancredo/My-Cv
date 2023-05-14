@@ -79,7 +79,7 @@ export const Section = styled.div`
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media (max-width: 600px) {
-    min-width: 28rem;
+    min-width: 100%;
   }
 `;
 
@@ -111,6 +111,7 @@ export const LanguagesSection = styled.div`
   text-align: center;
   @media (max-width: 450px) {
     flex-direction: column;
+    min-width: 100%;
   }
 `;
 

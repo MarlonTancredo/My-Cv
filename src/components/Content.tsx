@@ -92,9 +92,9 @@ const Content = () => {
             })}
           </S.List>
         </S.Section>
-      </Fade>
-      {/* Education and training */}
-      <Fade direction="right">
+
+        {/* Education and training */}
+
         <S.Section>
           {/* HyperionDev section */}
           <S.Paragraph>
@@ -139,8 +139,7 @@ const Content = () => {
             </S.ItemList>
           </S.List>
         </S.Section>
-      </Fade>
-      <Fade direction="right">
+
         <S.Section>
           <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
           <S.Paragraph>
