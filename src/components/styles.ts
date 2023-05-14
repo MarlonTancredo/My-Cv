@@ -4,8 +4,9 @@ import styled from "styled-components";
 const colors = {
   black: "#000000",
   grey: "#808080",
+  clearGrey: "#e5e5e5",
 };
-const { black, grey } = colors;
+const { black, grey, clearGrey } = colors;
 
 export const AsideContainer = styled.div`
   display: flex;
@@ -120,6 +121,12 @@ export const Paragraph = styled.div`
   justify-content: center;
   text-align: center;
   padding: 1rem;
+`;
+
+export const Line = styled.div`
+  border-bottom: 1px solid ${clearGrey};
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const List = styled.ul`

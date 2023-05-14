@@ -68,12 +68,13 @@ const Content = () => {
         <S.Section>
           <S.Paragraph>
             <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
+          </S.Paragraph>
+          <S.Paragraph style={{ textAlign: "left" }}>
             <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
             {` - ${useallCity} ${useallCountry}`}
-          </S.Paragraph>
-          <S.Paragraph>
+            <br />
             <strong>Front-end developer - Useall</strong>
-            <hr />
+            <S.Line />
           </S.Paragraph>
           <S.Paragraph>{useallJobDescription}</S.Paragraph>
           {/* Goals */}
@@ -82,9 +83,10 @@ const Content = () => {
               return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
             })}
           </S.List>
-          <S.Paragraph>
-            <strong>Main technologies used:</strong>
-            <hr />
+          <S.Paragraph style={{ textAlign: "left" }}>
+            <S.Line />
+            <strong>Main technologies used</strong>
+            <S.Line />
           </S.Paragraph>
           {/* Technologies */}
           <S.List>
@@ -100,12 +102,13 @@ const Content = () => {
           {/* HyperionDev section */}
           <S.Paragraph>
             <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
+          </S.Paragraph>
+          <S.Paragraph style={{ textAlign: "left" }}>
             <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
             {` - ${hyperionCity} ${hyperionCountry}`}
-          </S.Paragraph>
-          <S.Paragraph>
+            <br />
             <strong>Web Developer - HyperionDev</strong>
-            <hr />
+            <S.Line />
           </S.Paragraph>
           {/* Skills */}
           <S.List>
@@ -126,15 +129,14 @@ const Content = () => {
             </S.Paragraph>
           </Fade>
           {/* Senai section */}
-          <S.Paragraph>
-            <hr />
-            <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
-          </S.Paragraph>
-          <S.Paragraph>
-            <strong> Technical course - SENAI</strong>
-            <hr />
-          </S.Paragraph>
 
+          <S.Paragraph style={{ textAlign: "left" }}>
+            <S.Line />
+            <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
+            <br />
+            <strong> Technical course - SENAI</strong>
+            <S.Line />
+          </S.Paragraph>
           <S.List>
             <S.ItemList>Algorithms </S.ItemList>
             <S.ItemList>SQL database</S.ItemList>
@@ -148,10 +150,12 @@ const Content = () => {
         <S.Section>
           <S.Paragraph>
             <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
-            <strong> Mother tongue:</strong> Portuguese
-            <hr />
           </S.Paragraph>
-          <S.Paragraph>
+          <S.Paragraph style={{ textAlign: "left" }}>
+            <strong> Mother tongue:</strong> Portuguese
+          </S.Paragraph>
+          <S.Line />
+          <S.Paragraph style={{ textAlign: "left" }}>
             <strong> Other language:</strong> English
           </S.Paragraph>
           <S.SkillLanguages>
@@ -176,8 +180,8 @@ const Content = () => {
               <S.Skill>C1</S.Skill>
             </S.Language>
           </S.SkillLanguages>
-          <S.Paragraph>
-            <hr />
+          <S.Paragraph style={{ textAlign: "left" }}>
+            <S.Line />
             <strong>Other language:</strong> Italian
           </S.Paragraph>
           <S.SkillLanguages>
