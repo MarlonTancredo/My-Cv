@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div`
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
