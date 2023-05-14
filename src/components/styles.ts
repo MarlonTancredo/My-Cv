@@ -72,7 +72,7 @@ export const ContentContainer = styled.div`
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 1.5rem;
   min-width: 35rem;
   margin-bottom: 3rem;
   border-radius: 0.3rem;
