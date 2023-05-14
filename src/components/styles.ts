@@ -30,21 +30,7 @@ export const Paragraph = styled.div`
   justify-content: center;
 `;
 
-//Aside styles
-const topSlide = keyframes`
- from { 
-  transform: translateY(-400px);
- }
- to { 
-  transform: translateX(0px);
- }
- `;
-
 export const AsideContainer = styled.div`
-  animation-name: ${topSlide};
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
   margin-right: 20px;
   margin-left: 20px;
   display: flex;
@@ -101,20 +87,7 @@ export const SocialMidea = styled.div`
 `;
 
 //Content styles.
-const leftSlide = keyframes`
- from { 
-  transform: translateX(400px);
- }
- to { 
-  transform: translateX(0px);
- }
- `;
-
 export const ContentContainer = styled.div`
-  animation-name: ${leftSlide};
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
