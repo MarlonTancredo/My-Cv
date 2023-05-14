@@ -59,6 +59,22 @@ const {
   hyperionSkills,
 } = hyperionDev;
 
+const senai = {
+  senaiStartDate: "02/2014",
+  senaiEndDate: "12/2015",
+  senaiCity: "Criciúma",
+  senaiCountry: "Brazil",
+  senaiSkills: [
+    { skill: "Algorithms" },
+    { skill: "SQL database" },
+    { skill: "HTML" },
+    { skill: "CSS" },
+    { skill: "JavaScript" },
+  ],
+};
+const { senaiStartDate, senaiEndDate, senaiCity, senaiCountry, senaiSkills } =
+  senai;
+
 //Content component.
 const Content = () => {
   return (
@@ -105,7 +121,7 @@ const Content = () => {
           </S.Paragraph>
           <S.Paragraph style={{ textAlign: "left" }}>
             <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
-            {` - ${hyperionCity} ${hyperionCountry}`}
+            {` - ${hyperionCity}, ${hyperionCountry}`}
             <br />
             <strong>Web Developer - HyperionDev</strong>
             <S.Line />
@@ -132,17 +148,18 @@ const Content = () => {
 
           <S.Paragraph style={{ textAlign: "left" }}>
             <S.Line />
-            <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
+            <strong>{`${senaiStartDate} - ${senaiEndDate}`}</strong>{" "}
+            {`- ${senaiCity}, 
+            ${senaiCountry}`}
             <br />
             <strong> Technical course - SENAI</strong>
             <S.Line />
           </S.Paragraph>
           <S.List>
-            <S.ItemList>Algorithms </S.ItemList>
-            <S.ItemList>SQL database</S.ItemList>
-            <S.ItemList>
-              Website development with HTML, CSS and JavaScript
-            </S.ItemList>
+            {senaiSkills.map((skills: { skill: string }, index: number) => {
+              const { skill } = skills;
+              return <S.ItemList>{skill}</S.ItemList>;
+            })}
           </S.List>
         </S.Section>
       </Fade>
