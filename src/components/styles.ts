@@ -38,7 +38,6 @@ export const Role = styled.div`
 export const Information = styled.div`
   margin-top: 30px;
   text-align: center;
-
   svg {
     position: relative;
     top: 3.5px;
@@ -78,11 +77,14 @@ export const Section = styled.div`
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
-  @media only screen and (max-width: 600px) {
-    min-width: 100%;
+  @media only screen and (max-width: 550px) {
+    min-width: 30rem;
+  }
+  @media only screen and (max-width: 450px) {
+    min-width: 25rem;
   }
   @media only screen and (max-width: 400px) {
-    min-width: 90%;
+    min-width: 20rem;
   }
 `;
 
