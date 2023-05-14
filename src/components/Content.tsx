@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import { Fade } from "react-awesome-reveal";
 
 const useall = {
   useallStartDate: "11/2018",
