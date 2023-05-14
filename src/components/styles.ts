@@ -77,7 +77,7 @@ export const Section = styled.div`
   margin-bottom: 0.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     min-width: 96%;
   }
 `;
@@ -103,12 +103,12 @@ export const Link = styled.a`
   }
 `;
 
-export const LanguagesSection = styled.div`
+export const SkillLanguages = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
   text-align: center;
-  @media (max-width: 450px) {
+  @media only screen and (max-width: 450px) {
     flex-direction: column;
   }
 `;

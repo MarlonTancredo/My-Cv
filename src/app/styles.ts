@@ -5,7 +5,7 @@ export const AppContainer = styled.div`
   max-width: 1200px;
   display: flex;
   flex-direction: row;
-  @media (max-width: 1150px) {
+  @media only screen and (max-width: 1150px) {
     flex-direction: column;
   }
 `;

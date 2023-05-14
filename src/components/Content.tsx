@@ -110,7 +110,7 @@ const Content = () => {
             return <S.ItemList key={index}>{skill}</S.ItemList>;
           })}
         </S.List>
-        <Fade direction="right">
+        <Fade direction="left">
           <S.Paragraph>
             <strong>Portfolio: </strong>
             <S.Link
@@ -148,7 +148,7 @@ const Content = () => {
           <S.Paragraph>
             <strong> Other language:</strong> English
           </S.Paragraph>
-          <S.LanguagesSection>
+          <S.SkillLanguages>
             <S.Language>
               Listening
               <S.Skill>C1</S.Skill>
@@ -169,12 +169,12 @@ const Content = () => {
               Writing
               <S.Skill>C1</S.Skill>
             </S.Language>
-          </S.LanguagesSection>
+          </S.SkillLanguages>
           <S.Paragraph>
             <hr />
             <strong>Other language:</strong> Italian
           </S.Paragraph>
-          <S.LanguagesSection>
+          <S.SkillLanguages>
             <S.Language>
               Listening
               <S.Skill>C2</S.Skill>
@@ -195,7 +195,7 @@ const Content = () => {
               Writing
               <S.Skill>C2</S.Skill>
             </S.Language>
-          </S.LanguagesSection>
+          </S.SkillLanguages>
         </S.Section>
       </Fade>
     </S.ContentContainer>
