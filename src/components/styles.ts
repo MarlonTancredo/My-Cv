@@ -78,7 +78,10 @@ export const Section = styled.div`
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media only screen and (max-width: 600px) {
-    min-width: 96%;
+    min-width: 90%;
+  }
+  @media only screen and (max-width: 400px) {
+    min-width: 90%;
   }
 `;
 

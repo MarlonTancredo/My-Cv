@@ -64,80 +64,84 @@ const Content = () => {
   return (
     <S.ContentContainer>
       {/* Useall section */}
-      <S.Section>
-        <S.Paragraph>
-          <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
-          <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
-          {` - ${useallCity} ${useallCountry}`}
-        </S.Paragraph>
-        <S.Paragraph>
-          <strong>Front-end developer - Useall</strong>
-          <hr />
-        </S.Paragraph>
-        <S.Paragraph>{useallJobDescription}</S.Paragraph>
-        {/* Goals */}
-        <S.List>
-          {myGoals.map((goals: { goal: string }, index: number) => {
-            return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
-          })}
-        </S.List>
-        <S.Paragraph>
-          <strong>Main technologies used:</strong>
-        </S.Paragraph>
-        {/* Technologies */}
-        <S.List>
-          {technologies.map((skills: { skill: string }, index: number) => {
-            return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-          })}
-        </S.List>
-      </S.Section>
-      {/* Education and training */}
-      <S.Section>
-        {/* HyperionDev section */}
-        <S.Paragraph>
-          <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
-          <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
-          {` - ${hyperionCity} ${hyperionCountry}`}
-        </S.Paragraph>
-        <S.Paragraph>
-          <strong>Web Developer - HyperionDev</strong>
-          <hr />
-        </S.Paragraph>
-        {/* Skills */}
-        <S.List>
-          {hyperionSkills.map((skills: { skill: string }, index: number) => {
-            const { skill } = skills;
-            return <S.ItemList key={index}>{skill}</S.ItemList>;
-          })}
-        </S.List>
-        <Fade direction="left">
+      <Fade direction="left">
+        <S.Section>
           <S.Paragraph>
-            <strong>Portfolio: </strong>
-            <S.Link
-              href="https://www.hyperiondev.com/portfolio/103916/"
-              target="_blank"
-            >
-              www.hyperiondev.com
-            </S.Link>
+            <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
+            <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
+            {` - ${useallCity} ${useallCountry}`}
           </S.Paragraph>
-        </Fade>
-        {/* Senai section */}
-        <S.Paragraph>
-          <hr />
-          <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
-        </S.Paragraph>
-        <S.Paragraph>
-          <strong> Technical course - SENAI</strong>
-          <hr />
-        </S.Paragraph>
-        <S.List>
-          <S.ItemList>Algorithms </S.ItemList>
-          <S.ItemList>SQL database</S.ItemList>
-          <S.ItemList>
-            Website development with HTML, CSS and JavaScript
-          </S.ItemList>
-        </S.List>
-      </S.Section>
+          <S.Paragraph>
+            <strong>Front-end developer - Useall</strong>
+            <hr />
+          </S.Paragraph>
+          <S.Paragraph>{useallJobDescription}</S.Paragraph>
+          {/* Goals */}
+          <S.List>
+            {myGoals.map((goals: { goal: string }, index: number) => {
+              return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
+            })}
+          </S.List>
+          <S.Paragraph>
+            <strong>Main technologies used:</strong>
+          </S.Paragraph>
+          {/* Technologies */}
+          <S.List>
+            {technologies.map((skills: { skill: string }, index: number) => {
+              return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+            })}
+          </S.List>
+        </S.Section>
+      </Fade>
+      {/* Education and training */}
+      <Fade direction="left">
+        <S.Section>
+          {/* HyperionDev section */}
+          <S.Paragraph>
+            <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
+            <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
+            {` - ${hyperionCity} ${hyperionCountry}`}
+          </S.Paragraph>
+          <S.Paragraph>
+            <strong>Web Developer - HyperionDev</strong>
+            <hr />
+          </S.Paragraph>
+          {/* Skills */}
+          <S.List>
+            {hyperionSkills.map((skills: { skill: string }, index: number) => {
+              const { skill } = skills;
+              return <S.ItemList key={index}>{skill}</S.ItemList>;
+            })}
+          </S.List>
+          <Fade direction="left">
+            <S.Paragraph>
+              <strong>Portfolio: </strong>
+              <S.Link
+                href="https://www.hyperiondev.com/portfolio/103916/"
+                target="_blank"
+              >
+                www.hyperiondev.com
+              </S.Link>
+            </S.Paragraph>
+          </Fade>
+          {/* Senai section */}
+          <S.Paragraph>
+            <hr />
+            <strong>02/2014 - 12/2015 </strong> - Criciúma, Brazil
+          </S.Paragraph>
+          <S.Paragraph>
+            <strong> Technical course - SENAI</strong>
+            <hr />
+          </S.Paragraph>
+          <S.List>
+            <S.ItemList>Algorithms </S.ItemList>
+            <S.ItemList>SQL database</S.ItemList>
+            <S.ItemList>
+              Website development with HTML, CSS and JavaScript
+            </S.ItemList>
+          </S.List>
+        </S.Section>
+      </Fade>
       <Fade direction="left">
         <S.Section>
           <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
