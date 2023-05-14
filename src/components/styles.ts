@@ -74,7 +74,7 @@ export const Section = styled.div`
   flex-direction: column;
   padding: 0.5rem;
   min-width: 35rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media only screen and (max-width: 600px) {
@@ -94,7 +94,9 @@ export const Paragraph = styled.div`
   justify-content: center;
 `;
 
-export const List = styled.ul``;
+export const List = styled.ul`
+  margin-top: 0;
+`;
 
 export const ItemList = styled.li``;
 
