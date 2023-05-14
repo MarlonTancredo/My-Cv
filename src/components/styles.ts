@@ -13,6 +13,7 @@ export const AsideContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 6rem;
 `;
 
 export const imgCV = styled.img`
