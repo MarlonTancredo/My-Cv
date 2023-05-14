@@ -77,23 +77,38 @@ export const Section = styled.div`
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 580px) {
+    min-width: 34rem;
+  }
+  @media only screen and (max-width: 555px) {
+    min-width: 32rem;
+  }
+  @media only screen and (max-width: 530px) {
     min-width: 30rem;
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 490px) {
     min-width: 28rem;
+  }
+  @media only screen and (max-width: 460px) {
+    min-width: 26.5rem;
   }
   @media only screen and (max-width: 450px) {
     min-width: 25rem;
   }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 412px) {
     min-width: 23rem;
   }
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 380px) {
+    min-width: 21rem;
+  }
+  @media only screen and (max-width: 355px) {
     min-width: 19rem;
   }
-  @media only screen and (max-width: 300px) {
-    min-width: 15rem;
+  @media only screen and (max-width: 320px) {
+    min-width: 16.5rem;
+  }
+  @media only screen and (max-width: 285px) {
+    min-width: auto;
   }
 `;
 
