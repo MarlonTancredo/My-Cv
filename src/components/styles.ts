@@ -7,29 +7,6 @@ const colors = {
 };
 const { black, grey } = colors;
 
-//Any Component
-export const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  min-width: 35rem;
-  margin-bottom: 0.5rem;
-  border-radius: 0.3rem;
-  box-shadow: 0 6px 20px 0 ${colors.grey};
-  @media (max-width: 600px) {
-    min-width: 100%;
-  }
-`;
-
-export const SectionTitle = styled.h3`
-  color: ${grey};
-`;
-
-export const Paragraph = styled.div`
-  margin-bottom: 20px;
-  justify-content: center;
-`;
-
 export const AsideContainer = styled.div`
   margin-right: 20px;
   margin-left: 20px;
@@ -91,6 +68,28 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  min-width: 35rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 6px 20px 0 ${colors.grey};
+  @media (max-width: 600px) {
+    min-width: 28rem;
+  }
+`;
+
+export const SectionTitle = styled.h3`
+  color: ${grey};
+`;
+
+export const Paragraph = styled.div`
+  margin-bottom: 20px;
+  justify-content: center;
 `;
 
 export const List = styled.ul``;
