@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
