@@ -74,7 +74,7 @@ export const Section = styled.div`
   flex-direction: column;
   padding: 1.5rem;
   min-width: 35rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media only screen and (max-width: 600px) {

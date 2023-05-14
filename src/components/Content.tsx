@@ -64,34 +64,36 @@ const Content = () => {
   return (
     <S.ContentContainer>
       {/* Useall section */}
-      <S.Section>
-        <S.Paragraph>
-          <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
-          <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
-          {` - ${useallCity} ${useallCountry}`}
-        </S.Paragraph>
-        <S.Paragraph>
-          <strong>Front-end developer - Useall</strong>
-          <hr />
-        </S.Paragraph>
-        <S.Paragraph>{useallJobDescription}</S.Paragraph>
-        {/* Goals */}
-        <S.List>
-          {myGoals.map((goals: { goal: string }, index: number) => {
-            return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
-          })}
-        </S.List>
-        <S.Paragraph>
-          <strong>Main technologies used:</strong>
-          <hr />
-        </S.Paragraph>
-        {/* Technologies */}
-        <S.List>
-          {technologies.map((skills: { skill: string }, index: number) => {
-            return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
-          })}
-        </S.List>
-      </S.Section>
+      <Fade>
+        <S.Section>
+          <S.Paragraph>
+            <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
+            <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
+            {` - ${useallCity} ${useallCountry}`}
+          </S.Paragraph>
+          <S.Paragraph>
+            <strong>Front-end developer - Useall</strong>
+            <hr />
+          </S.Paragraph>
+          <S.Paragraph>{useallJobDescription}</S.Paragraph>
+          {/* Goals */}
+          <S.List>
+            {myGoals.map((goals: { goal: string }, index: number) => {
+              return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
+            })}
+          </S.List>
+          <S.Paragraph>
+            <strong>Main technologies used:</strong>
+            <hr />
+          </S.Paragraph>
+          {/* Technologies */}
+          <S.List>
+            {technologies.map((skills: { skill: string }, index: number) => {
+              return <S.ItemList key={index}>{skills.skill}</S.ItemList>;
+            })}
+          </S.List>
+        </S.Section>
+      </Fade>
       {/* Education and training */}
       <Fade direction="left">
         <S.Section>
