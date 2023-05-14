@@ -99,7 +99,7 @@ export const Section = styled.div`
     min-width: 23rem;
   }
   @media only screen and (max-width: 380px) {
-    min-width: 21rem;
+    min-width: 21.5rem;
   }
   @media only screen and (max-width: 355px) {
     min-width: 19.5rem;
