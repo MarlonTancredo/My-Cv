@@ -8,8 +8,6 @@ const colors = {
 const { black, grey } = colors;
 
 export const AsideContainer = styled.div`
-  margin-right: 20px;
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

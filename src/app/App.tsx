@@ -14,9 +14,7 @@ function App() {
         </Fade>
       </S.AsideDiv>
       <S.CotentDiv>
-        <Fade direction="right">
-          <Content />
-        </Fade>
+        <Content />
       </S.CotentDiv>
     </S.AppContainer>
   );

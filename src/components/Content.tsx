@@ -1,4 +1,5 @@
 import * as S from "./styles";
+import { Fade } from "react-awesome-reveal";
 
 const useall = {
   useallStartDate: "11/2018",
@@ -109,15 +110,17 @@ const Content = () => {
             return <S.ItemList key={index}>{skill}</S.ItemList>;
           })}
         </S.List>
-        <S.Paragraph>
-          <strong>Portfolio: </strong>
-          <S.Link
-            href="https://www.hyperiondev.com/portfolio/103916/"
-            target="_blank"
-          >
-            www.hyperiondev.com
-          </S.Link>
-        </S.Paragraph>
+        <Fade direction="right">
+          <S.Paragraph>
+            <strong>Portfolio: </strong>
+            <S.Link
+              href="https://www.hyperiondev.com/portfolio/103916/"
+              target="_blank"
+            >
+              www.hyperiondev.com
+            </S.Link>
+          </S.Paragraph>
+        </Fade>
         {/* Senai section */}
         <S.Paragraph>
           <hr />
@@ -135,64 +138,66 @@ const Content = () => {
           </S.ItemList>
         </S.List>
       </S.Section>
-      <S.Section>
-        <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
-        <S.Paragraph>
-          <strong> Mother tongue:</strong> Portuguese
-          <hr />
-        </S.Paragraph>
-        <S.Paragraph>
-          <strong> Other language:</strong> English
-        </S.Paragraph>
-        <S.LanguagesSection>
-          <S.Language>
-            Listening
-            <S.Skill>C1</S.Skill>
-          </S.Language>
-          <S.Language>
-            Reading
-            <S.Skill>C1</S.Skill>
-          </S.Language>
-          <S.Language>
-            Spoken production
-            <S.Skill>C1</S.Skill>
-          </S.Language>
-          <S.Language>
-            Spoken interaction
-            <S.Skill>C1</S.Skill>
-          </S.Language>
-          <S.Language>
-            Writing
-            <S.Skill>C1</S.Skill>
-          </S.Language>
-        </S.LanguagesSection>
-        <S.Paragraph>
-          <hr />
-          <strong>Other language:</strong> Italian
-        </S.Paragraph>
-        <S.LanguagesSection>
-          <S.Language>
-            Listening
-            <S.Skill>C2</S.Skill>
-          </S.Language>
-          <S.Language>
-            Reading
-            <S.Skill>C2</S.Skill>
-          </S.Language>
-          <S.Language>
-            Spoken production
-            <S.Skill>C2</S.Skill>
-          </S.Language>
-          <S.Language>
-            Spoken interaction
-            <S.Skill>C2</S.Skill>
-          </S.Language>
-          <S.Language>
-            Writing
-            <S.Skill>C2</S.Skill>
-          </S.Language>
-        </S.LanguagesSection>
-      </S.Section>
+      <Fade direction="left">
+        <S.Section>
+          <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
+          <S.Paragraph>
+            <strong> Mother tongue:</strong> Portuguese
+            <hr />
+          </S.Paragraph>
+          <S.Paragraph>
+            <strong> Other language:</strong> English
+          </S.Paragraph>
+          <S.LanguagesSection>
+            <S.Language>
+              Listening
+              <S.Skill>C1</S.Skill>
+            </S.Language>
+            <S.Language>
+              Reading
+              <S.Skill>C1</S.Skill>
+            </S.Language>
+            <S.Language>
+              Spoken production
+              <S.Skill>C1</S.Skill>
+            </S.Language>
+            <S.Language>
+              Spoken interaction
+              <S.Skill>C1</S.Skill>
+            </S.Language>
+            <S.Language>
+              Writing
+              <S.Skill>C1</S.Skill>
+            </S.Language>
+          </S.LanguagesSection>
+          <S.Paragraph>
+            <hr />
+            <strong>Other language:</strong> Italian
+          </S.Paragraph>
+          <S.LanguagesSection>
+            <S.Language>
+              Listening
+              <S.Skill>C2</S.Skill>
+            </S.Language>
+            <S.Language>
+              Reading
+              <S.Skill>C2</S.Skill>
+            </S.Language>
+            <S.Language>
+              Spoken production
+              <S.Skill>C2</S.Skill>
+            </S.Language>
+            <S.Language>
+              Spoken interaction
+              <S.Skill>C2</S.Skill>
+            </S.Language>
+            <S.Language>
+              Writing
+              <S.Skill>C2</S.Skill>
+            </S.Language>
+          </S.LanguagesSection>
+        </S.Section>
+      </Fade>
     </S.ContentContainer>
   );
 };
