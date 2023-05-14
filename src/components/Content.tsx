@@ -85,12 +85,12 @@ const Content = () => {
           <S.Paragraph>
             <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
           </S.Paragraph>
+          <S.Line />
           <S.Paragraph style={{ textAlign: "left" }}>
             <strong>{`${useallStartDate} - ${useallEndDate}`}</strong>
             {` - ${useallCity} ${useallCountry}`}
             <br />
             <strong>Front-end developer - Useall</strong>
-            <S.Line />
           </S.Paragraph>
           <S.Paragraph>{useallJobDescription}</S.Paragraph>
           {/* Goals */}
@@ -102,7 +102,6 @@ const Content = () => {
           <S.Paragraph style={{ textAlign: "left" }}>
             <S.Line />
             <strong>Main technologies used</strong>
-            <S.Line />
           </S.Paragraph>
           {/* Technologies */}
           <S.List>
@@ -119,12 +118,12 @@ const Content = () => {
           <S.Paragraph>
             <S.SectionTitle>EDUCATION AND TRAINING</S.SectionTitle>
           </S.Paragraph>
+          <S.Line />
           <S.Paragraph style={{ textAlign: "left" }}>
             <strong>{`${hyperionStartDate} - ${hyperionEndDate}`}</strong>
             {` - ${hyperionCity}, ${hyperionCountry}`}
             <br />
             <strong>Web Developer - HyperionDev</strong>
-            <S.Line />
           </S.Paragraph>
           {/* Skills */}
           <S.List>
@@ -153,7 +152,6 @@ const Content = () => {
             ${senaiCountry}`}
             <br />
             <strong> Technical course - SENAI</strong>
-            <S.Line />
           </S.Paragraph>
           <S.List>
             {senaiSkills.map((skills: { skill: string }, index: number) => {
@@ -168,10 +166,11 @@ const Content = () => {
           <S.Paragraph>
             <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
           </S.Paragraph>
+          <S.Line />
           <S.Paragraph style={{ textAlign: "left" }}>
             <strong> Mother tongue:</strong> Portuguese
+            <S.Line />
           </S.Paragraph>
-          <S.Line />
           <S.Paragraph style={{ textAlign: "left" }}>
             <strong> Other language:</strong> English
           </S.Paragraph>
