@@ -20,7 +20,6 @@ export const AsideContainer = styled.div`
 export const imgCV = styled.img`
   width: 200px;
   border-radius: 200px;
-  margin-top: 20px;
   margin-bottom: 20px;
 `;
 
