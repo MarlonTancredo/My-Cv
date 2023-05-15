@@ -40,10 +40,12 @@ const hyperionDev = {
   hyperionSkills: [
     { skill: "Algorithms and programming logic with JAVASCRIPT" },
     { skill: "Oriented objects programming with Java Script." },
-    { skill: "HTML and CSS" },
+    { skill: "HTML" },
+    { skill: "CSS" },
     { skill: "Version control with GIT Basics." },
     { skill: "Node JS." },
     { skill: "Bootstrap." },
+    { skill: "Styled components" },
     { skill: "Redux." },
     { skill: "React JS." },
   ],
