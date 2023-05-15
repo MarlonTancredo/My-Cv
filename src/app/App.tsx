@@ -1,6 +1,5 @@
 import * as S from "./styles";
 
-//Importing aside and content component.
 import Aside from "../components/Aside";
 import Content from "../components/Content";
 

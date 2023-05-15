@@ -168,7 +168,7 @@ const Content = () => {
             })}
           </S.List>
           <Fade direction="up" duration={2000}>
-            <S.Paragraph style={{ textAlign: "center" }}>
+            <S.Paragraph>
               <strong>Portfolio: </strong>
               <S.Link
                 href="https://www.hyperiondev.com/portfolio/103916/"
