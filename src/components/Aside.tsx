@@ -11,7 +11,7 @@ import profile from "../img/profile.png";
 //Aside Component.
 const Aside = () => {
   return (
-    <Fade direction="left">
+    <Fade direction="left" duration={2000}>
       <S.AsideContainer>
         <div>
           <S.imgCV alt="Marlon-img" src={profile}></S.imgCV>

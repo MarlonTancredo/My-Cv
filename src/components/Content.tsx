@@ -77,7 +77,7 @@ const Content = () => {
   return (
     <S.ContentContainer>
       {/* Useall section */}
-      <Fade>
+      <Fade duration={1000}>
         <S.Section>
           <S.Paragraph>
             <S.SectionTitle>WORK EXPERIENCE</S.SectionTitle>
@@ -127,7 +127,7 @@ const Content = () => {
         </S.Section>
       </Fade>
       {/* Education and training */}
-      <Fade>
+      <Fade duration={1000}>
         <S.Section>
           {/* HyperionDev section */}
           <S.Paragraph>
@@ -176,7 +176,7 @@ const Content = () => {
           </S.List>
         </S.Section>
       </Fade>
-      <Fade direction="left">
+      <Fade direction="left" duration={2000}>
         <S.Section>
           <S.Paragraph>
             <S.SectionTitle>LANGUAGE SKILLS</S.SectionTitle>
