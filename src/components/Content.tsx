@@ -72,6 +72,24 @@ const senai = {
 const { senaiStartDate, senaiEndDate, senaiCity, senaiCountry, senaiSkills } =
   senai;
 
+const bachelor = {
+  ufscStartDate: "02/2016",
+  ufscEndDate: "02/2019",
+  ufscCity: "Araranguá",
+  ufscCountry: "Brazil",
+  ufscSkill: [
+    { skill: "Algorithms and programming logic with Python." },
+    { skill: "Oriented objects programming with Javascript" },
+    { skill: " Web development with Javascript, HTML5 and CSS." },
+    { skill: "Unity" },
+    { skill: "Version control with Git Basics." },
+    { skill: " SQL database." },
+    { skill: " Mathematics." },
+  ],
+};
+const { ufscStartDate, ufscEndDate, ufscCity, ufscCountry, ufscSkill } =
+  bachelor;
+
 //Content component.
 const Content = () => {
   return (
@@ -158,8 +176,22 @@ const Content = () => {
               </S.Link>
             </S.Paragraph>
           </Fade>
+          {/* Bachelor */}
+          <S.Paragraph style={{ textAlign: "left" }}>
+            <S.Line />
+            <strong>{`${ufscStartDate} - ${ufscEndDate}`}</strong>{" "}
+            {`- ${ufscCity}, 
+            ${ufscCountry}`}
+            <br />
+            <strong> Bachelor - UFSC</strong>
+          </S.Paragraph>
+          <S.List>
+            {ufscSkill.map((skills: { skill: string }, index: number) => {
+              const { skill } = skills;
+              return <S.ItemList key={index}>{skill}</S.ItemList>;
+            })}
+          </S.List>
           {/* Senai section */}
-
           <S.Paragraph style={{ textAlign: "left" }}>
             <S.Line />
             <strong>{`${senaiStartDate} - ${senaiEndDate}`}</strong>{" "}
