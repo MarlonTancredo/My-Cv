@@ -4,7 +4,7 @@ import styled from "styled-components";
 const colors = {
   black: "#000000",
   grey: "#808080",
-  clearGrey: "#e5e5e5",
+  clearGrey: "#c9d1d3",
 };
 const { black, grey, clearGrey } = colors;
 
