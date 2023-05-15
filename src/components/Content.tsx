@@ -6,8 +6,6 @@ const useall = {
   useallEndDate: "10/2019",
   useallCity: "Criciúma",
   useallCountry: "Brazil",
-  useallJobDescription:
-    " At Useall i had my first job as Front-end developer my main goals were:",
   myGoals: [
     { goal: "Develop user-friendly interfaces." },
     {
@@ -30,7 +28,6 @@ const {
   useallEndDate,
   useallCity,
   useallCountry,
-  useallJobDescription,
   technologies,
   myGoals,
 } = useall;
@@ -92,16 +89,34 @@ const Content = () => {
             <br />
             <strong>Front-end developer - Useall</strong>
           </S.Paragraph>
-          <S.Paragraph>{useallJobDescription}</S.Paragraph>
+          <S.Paragraph>
+            At{" "}
+            <S.Link href="https://www.useall.com.br/" target="_blank">
+              Useall
+            </S.Link>{" "}
+            i had my first job as Front-end developer, Useall is a software
+            company that work in many different fields, like Electricity
+            distribution, Small Business and Text industry. As front end
+            developer i have created many user interfaces on{" "}
+            <S.Link href="https://gestaoizy.com.br/" target="_blank">
+              IZY software
+            </S.Link>
+            , one of many softwares in this company. IZY was a web management
+            system for small and middle business, this software is used to
+            control stock, costs, profits, clients and other purposes.
+          </S.Paragraph>
           {/* Goals */}
+          <S.Paragraph>
+            <strong>My main golas were:</strong>
+          </S.Paragraph>
           <S.List>
             {myGoals.map((goals: { goal: string }, index: number) => {
               return <S.ItemList key={index}>{goals.goal}</S.ItemList>;
             })}
           </S.List>
-          <S.Paragraph style={{ textAlign: "left" }}>
+          <S.Paragraph>
             <S.Line />
-            <strong>Main technologies used</strong>
+            <strong>Main technologies used:</strong>
           </S.Paragraph>
           {/* Technologies */}
           <S.List>
@@ -112,7 +127,7 @@ const Content = () => {
         </S.Section>
       </Fade>
       {/* Education and training */}
-      <Fade direction="left">
+      <Fade>
         <S.Section>
           {/* HyperionDev section */}
           <S.Paragraph>
@@ -132,8 +147,8 @@ const Content = () => {
               return <S.ItemList key={index}>{skill}</S.ItemList>;
             })}
           </S.List>
-          <Fade direction="left">
-            <S.Paragraph>
+          <Fade direction="up" duration={2000}>
+            <S.Paragraph style={{ textAlign: "center" }}>
               <strong>Portfolio: </strong>
               <S.Link
                 href="https://www.hyperiondev.com/portfolio/103916/"
@@ -156,7 +171,7 @@ const Content = () => {
           <S.List>
             {senaiSkills.map((skills: { skill: string }, index: number) => {
               const { skill } = skills;
-              return <S.ItemList>{skill}</S.ItemList>;
+              return <S.ItemList key={index}>{skill}</S.ItemList>;
             })}
           </S.List>
         </S.Section>

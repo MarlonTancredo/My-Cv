@@ -75,6 +75,7 @@ export const Section = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 35rem;
+  max-width: 35rem;
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
@@ -118,8 +119,8 @@ export const SectionTitle = styled.h3`
 `;
 
 export const Paragraph = styled.div`
+  text-align: justify;
   justify-content: center;
-  text-align: center;
   padding: 1rem;
 `;
 
@@ -135,9 +136,11 @@ export const List = styled.ul`
 
 export const ItemList = styled.li`
   margin-top: 0;
+  list-style: square;
 `;
 
 export const Link = styled.a`
+  align-self: center;
   text-decoration: transparent;
   color: ${grey};
   &:hover {

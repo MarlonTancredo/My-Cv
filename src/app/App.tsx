@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import { Fade } from "react-awesome-reveal";
 
 //Importing aside and content component.
 import Aside from "../components/Aside";
@@ -9,9 +8,7 @@ function App() {
   return (
     <S.AppContainer>
       <S.AsideDiv>
-        <Fade direction="left">
-          <Aside />
-        </Fade>
+        <Aside />
       </S.AsideDiv>
       <S.CotentDiv>
         <Content />
