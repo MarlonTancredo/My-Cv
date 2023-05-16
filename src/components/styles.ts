@@ -134,20 +134,24 @@ export const Section = styled.div`
   }
 `;
 
-export const SectionTitle = styled.h3`
+export const SectionTitle = styled.div`
+  font-size: 20px;
+  margin-top: 2rem;
   color: ${grey};
 `;
 
 export const Paragraph = styled.div`
   text-align: justify;
   justify-content: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 `;
 
 export const Line = styled.div`
   border-bottom: 1px solid ${clearGrey};
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
 `;
 
 export const List = styled.ul`
