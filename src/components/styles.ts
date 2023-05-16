@@ -11,16 +11,8 @@ const colors = {
   clearBlue: "#8ab4f8",
   clearGrey: "#c9d1d3",
 };
-const {
-  black,
-  blue,
-  grey,
-  linkdedin,
-  LinkedinHover,
-  blackHover,
-  clearBlue,
-  clearGrey,
-} = colors;
+const { black, blue, grey, linkdedin, LinkedinHover, blackHover, clearGrey } =
+  colors;
 
 export const AsideContainer = styled.div`
   display: flex;
