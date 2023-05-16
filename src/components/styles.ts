@@ -6,12 +6,21 @@ const colors = {
   blue: "#1967d2",
   grey: "#808080",
   linkdedin: "#0072B1",
-  LinkedinHover: "#03669b",
+  LinkedinHover: "#0073b1dc",
+  blackHover: "#000000bd",
   clearBlue: "#8ab4f8",
   clearGrey: "#c9d1d3",
 };
-const { black, blue, grey, linkdedin, LinkedinHover, clearBlue, clearGrey } =
-  colors;
+const {
+  black,
+  blue,
+  grey,
+  linkdedin,
+  LinkedinHover,
+  blackHover,
+  clearBlue,
+  clearGrey,
+} = colors;
 
 export const AsideContainer = styled.div`
   display: flex;
@@ -62,10 +71,10 @@ export const GitHub = styled.div`
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    color: ${grey};
+    color: ${black};
   }
   & :hover {
-    color: ${black};
+    color: ${blackHover};
     cursor: pointer;
   }
 `;
