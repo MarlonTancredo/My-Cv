@@ -3,7 +3,6 @@ import { Fade } from "react-awesome-reveal";
 
 //Importing icons
 import * as Fa from "react-icons/fa";
-import * as Fi from "react-icons/fi";
 import * as Bs from "react-icons/bs";
 
 import profile from "../img/profile.png";
