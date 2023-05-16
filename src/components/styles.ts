@@ -20,7 +20,7 @@ export const AsideContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 `;
 
 export const imgCV = styled.img`
@@ -96,7 +96,7 @@ export const Section = styled.div`
   flex-direction: column;
   min-width: 35rem;
   max-width: 35rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 6px 20px 0 ${colors.grey};
   @media only screen and (max-width: 580px) {
