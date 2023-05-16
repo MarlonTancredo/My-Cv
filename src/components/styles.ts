@@ -3,10 +3,15 @@ import styled from "styled-components";
 //Colors
 const colors = {
   black: "#000000",
+  blue: "#1967d2",
   grey: "#808080",
+  linkdedin: "#0072B1",
+  LinkedinHover: "#03669b",
+  clearBlue: "#8ab4f8",
   clearGrey: "#c9d1d3",
 };
-const { black, grey, clearGrey } = colors;
+const { black, blue, grey, linkdedin, LinkedinHover, clearBlue, clearGrey } =
+  colors;
 
 export const AsideContainer = styled.div`
   display: flex;
@@ -42,7 +47,7 @@ export const Information = styled.div`
     position: relative;
     top: 3.5px;
     margin-right: 8px;
-    color: ${grey};
+    color: ${black};
   }
 `;
 
@@ -50,7 +55,9 @@ export const SocialMidea = styled.div`
   margin-top: 30px;
   display: flex;
   flex-direction: row;
+`;
 
+export const GitHub = styled.div`
   svg {
     width: 40px;
     height: 40px;
@@ -59,6 +66,19 @@ export const SocialMidea = styled.div`
   }
   & :hover {
     color: ${black};
+    cursor: pointer;
+  }
+`;
+
+export const Linkedin = styled.div`
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    color: ${linkdedin};
+  }
+  & :hover {
+    color: ${LinkedinHover};
     cursor: pointer;
   }
 `;
@@ -141,7 +161,7 @@ export const ItemList = styled.li`
 export const Link = styled.a`
   align-self: center;
   text-decoration: transparent;
-  color: ${grey};
+  color: ${blue};
   &:hover {
     text-decoration: underline;
   }
@@ -153,6 +173,8 @@ export const SkillLanguages = styled.div`
   padding: 1rem;
   gap: 10px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   @media only screen and (max-width: 450px) {
     flex-direction: column;
   }

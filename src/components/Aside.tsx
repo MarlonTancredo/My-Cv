@@ -31,20 +31,24 @@ const Aside = () => {
           </S.Paragraph>
         </S.Information>
         <S.SocialMidea>
-          <a
-            href="https://github.com/MarlonTancredo"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Bs.BsGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/daks-marlon-tancredo-15a740145/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Bs.BsLinkedin />
-          </a>
+          <S.GitHub>
+            <a
+              href="https://github.com/MarlonTancredo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Bs.BsGithub />
+            </a>
+          </S.GitHub>
+          <S.Linkedin>
+            <a
+              href="https://www.linkedin.com/in/daks-marlon-tancredo-15a740145/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Bs.BsLinkedin />
+            </a>
+          </S.Linkedin>
         </S.SocialMidea>
       </S.AsideContainer>
     </Fade>
