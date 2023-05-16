@@ -136,6 +136,7 @@ export const Section = styled.div`
 
 export const SectionTitle = styled.div`
   font-size: 20px;
+  font-weight: bold;
   margin-top: 2rem;
   color: ${grey};
 `;
