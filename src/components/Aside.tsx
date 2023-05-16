@@ -22,11 +22,10 @@ const Aside = () => {
         </div>
         <S.Information>
           <S.Paragraph style={{ textAlign: "center" }}>
-            <Fa.FaLocationArrow />
+            <Fa.FaLocationArrow size={14} />
             London, Uk
           </S.Paragraph>
           <S.Paragraph style={{ textAlign: "center" }}>
-            <Fi.FiMail />
             marlon_tancredo@hotmail.com
           </S.Paragraph>
         </S.Information>

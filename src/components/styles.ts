@@ -46,8 +46,8 @@ export const Information = styled.div`
   text-align: center;
   svg {
     position: relative;
-    top: 3.5px;
-    margin-right: 8px;
+    top: 2.4px;
+    margin-right: 0.5rem;
     color: ${black};
   }
 `;
