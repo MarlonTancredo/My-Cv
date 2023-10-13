@@ -9,9 +9,9 @@ function App() {
             <S.AsideDiv>
                 <Aside />
             </S.AsideDiv>
-            <S.CotentDiv>
+            <S.ContentDiv>
                 <Content />
-            </S.CotentDiv>
+            </S.ContentDiv>
         </S.AppContainer>
     );
 }

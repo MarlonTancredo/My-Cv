@@ -17,4 +17,4 @@ export const AsideDiv = styled.div`
     margin-left: 5rem;
 `;
 
-export const CotentDiv = styled.div``;
+export const ContentDiv = styled.div``;
