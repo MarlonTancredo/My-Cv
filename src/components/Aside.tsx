@@ -17,7 +17,7 @@ const Aside = () => {
                 </div>
                 <div>
                     <S.Name>Daks Marlon Tancredo</S.Name>
-                    <S.Role>Junior Front-End Web Developer</S.Role>
+                    <S.Role>JavaScript Developer</S.Role>
                 </div>
                 <S.Information>
                     <S.Paragraph style={{ textAlign: "center" }}>
