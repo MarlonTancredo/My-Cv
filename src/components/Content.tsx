@@ -7,14 +7,17 @@ const useall = {
     useallCity: "Criciúma",
     useallCountry: "Brazil",
     myGoals: [
-        { goal: "Develop user-friendly interfaces." },
         {
-            goal: "Transform the specific resource requirements for the system.",
+            goal: "Create user friendly interfaces following good practice of clean code, accessibility principles and responsive design.",
         },
         {
-            goal: "Keep the code well organized by following good clean code practices.",
+            goal: "Release software maintenance and bug fixing",
         },
-        { goal: "Maintain code with good automated test coverage." },
+        {
+            goal: "Improve software performance analyzing the best problem solution",
+        },
+        { goal: "Write well organized documentations for the pages and software components." },
+        { goal: "Work closely to the backend team consuming APIs developed in C# to build the frontend application." },
     ],
     technologies: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "SASS" }, { skill: "Javascript" }],
 };
@@ -90,18 +93,18 @@ const Content = () => {
                         <strong>Front-end developer - Useall</strong>
                     </S.Paragraph>
                     <S.Paragraph>
-                        At{" "}
+                        As a front end developer at{" "}
                         <S.Link href="https://www.useall.com.br/" target="_blank">
                             Useall
                         </S.Link>{" "}
-                        i had my first job as Front-end developer, Useall is a software company that work in many
-                        different fields, like Electricity distribution, Small Business and Text industry. As front end
-                        developer i have created many user interfaces on{" "}
+                        I have worked on{" "}
                         <S.Link href="https://gestaoizy.com.br/" target="_blank">
                             IZY software
-                        </S.Link>
-                        , one of many softwares in this company. IZY was a web management system for small and middle
-                        business, this software is used to control stock, costs, profits, clients and other purposes.
+                        </S.Link>{" "}
+                        creating user interfaces with Javascript, HTML and CSS, to control stocks, costs and profits for
+                        small and middle businesses , one of many softwares in this company. IZY was a web management
+                        system for small and middle business, this software is used to control stock, costs, profits,
+                        clients and other purposes.
                     </S.Paragraph>
                     {/* Goals */}
                     <S.Paragraph>
