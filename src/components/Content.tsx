@@ -1,78 +1,14 @@
 import * as S from "./styles";
 import { Fade } from "react-awesome-reveal";
 
-const useall = {
-    useallStartDate: "11/2018",
-    useallEndDate: "10/2019",
-    useallCity: "Criciúma",
-    useallCountry: "Brazil",
-    myGoals: [
-        {
-            goal: "Create user friendly interfaces following good practice of clean code, accessibility principles and responsive design.",
-        },
-        {
-            goal: "Release software maintenance and bug fixing",
-        },
-        {
-            goal: "Improve software performance analyzing the best problem solution",
-        },
-        { goal: "Write well organized documentations for the pages and software components." },
-        { goal: "Work closely to the backend team consuming APIs developed in C# to build the frontend application." },
-    ],
-    technologies: [{ skill: "HTML" }, { skill: "CSS" }, { skill: "SASS" }, { skill: "Javascript" }],
-};
+import { useall, hyperionDev, senai, bachelor } from "./data_content";
+
 const { useallStartDate, useallEndDate, useallCity, useallCountry, technologies, myGoals } = useall;
 
-const hyperionDev = {
-    hyperionStartDate: "11/2022",
-    hyperionEndDate: "04/2023",
-    hyperionCity: "London",
-    hyperionCountry: "England - UK",
-    hyperionSkills: [
-        { skill: "Algorithms and programming logic with JAVASCRIPT" },
-        { skill: "Oriented objects programming with Java Script." },
-        { skill: "HTML" },
-        { skill: "CSS" },
-        { skill: "Version control with GIT Basics." },
-        { skill: "Node JS." },
-        { skill: "Bootstrap." },
-        { skill: "Styled components" },
-        { skill: "Redux." },
-        { skill: "React JS." },
-    ],
-};
 const { hyperionStartDate, hyperionEndDate, hyperionCity, hyperionCountry, hyperionSkills } = hyperionDev;
 
-const senai = {
-    senaiStartDate: "02/2014",
-    senaiEndDate: "12/2015",
-    senaiCity: "Criciúma",
-    senaiCountry: "Brazil",
-    senaiSkills: [
-        { skill: "Algorithms" },
-        { skill: "SQL database" },
-        { skill: "HTML" },
-        { skill: "CSS" },
-        { skill: "JavaScript" },
-    ],
-};
 const { senaiStartDate, senaiEndDate, senaiCity, senaiCountry, senaiSkills } = senai;
 
-const bachelor = {
-    ufscStartDate: "02/2016",
-    ufscEndDate: "02/2019",
-    ufscCity: "Araranguá",
-    ufscCountry: "Brazil",
-    ufscSkill: [
-        { skill: "Algorithms and programming logic with Python." },
-        { skill: "Oriented objects programming with Javascript" },
-        { skill: " Web development with Javascript, HTML5 and CSS." },
-        { skill: "Unity" },
-        { skill: "Version control with Git Basics." },
-        { skill: " SQL database." },
-        { skill: " Mathematics." },
-    ],
-};
 const { ufscStartDate, ufscEndDate, ufscCity, ufscCountry, ufscSkill } = bachelor;
 
 //Content component.
@@ -249,6 +185,14 @@ const Content = () => {
                             <S.Skill>C2</S.Skill>
                         </S.Language>
                     </S.SkillLanguages>
+                </S.Section>
+                <S.Section>
+                    <S.Paragraph style={{ paddingTop: "1rem", textAlign: "center" }}>
+                        See the code of this project on{" "}
+                        <S.Link href="https://github.com/MarlonTancredo/My-Cv" target="_blank">
+                            GitHub
+                        </S.Link>
+                    </S.Paragraph>
                 </S.Section>
             </Fade>
         </S.ContentContainer>
